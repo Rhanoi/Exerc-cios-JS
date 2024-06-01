@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Imobiliária</title>
 </head>
 <body>
-<script src="01_terreno.js"></script>    
-<button onclick="mostrar()">clique</button>
+    <h1>Calculadora Imobiliária</h1>
+    <section>
+        <p>Digite a largura</p>
+        <input type="number" id="larguraInput">
+        <br>
+        
+        <p>Digite o comprimento</p>
+        <input type="number" id="comprimentoInput">
+        <br>
+        
+        <p>Digite o valor do m²</p>
+        <input type="number" id="valorM2Input">
+        <br>
+
+        <button onclick="precificacaoDoTerreno()">Calcular</button>
+        <br>
+        <p id="areaDoTerreno">Área do terreno: </p><br>
+        <p id="precoDoTerreno">Preço do Terreno: </p>
+    </section>
+    <script src="01_terreno.js"></script>  
+        
 </body>
 </html>
-
-<link rel="stylesheet" href="style.css">
